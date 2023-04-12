@@ -9,30 +9,35 @@
                 Id = "rvjmygy9h",
                 Title =  "Learn JavaScript",
                 Complete = false,
+                UserId = 123,
             },
             new Task
             {
                 Id = "oszz1w0z9",
                 Title = "Make coffee",
                 Complete = true,
+                UserId = 123,
             },
             new Task
             {
                 Id = "e2iliqkfg",
                 Title = "Build a deck",
                 Complete = true,
+                UserId = 345,
             },
             new Task
             {
                 Id = "iy93nd667",
                 Title = "Go viral on TikTok",
                 Complete = true,
+                UserId = 345,
             },
             new Task
             {
                 Id = "d2d9ymim6",
                 Title = "Solve world hunger",
                 Complete = false,
+                UserId = 345,
             },
         };
 

@@ -63,10 +63,20 @@ public class Task
     public string Id { get; set; }
     public string Title { get; set; }
     public bool Complete { get; set; }
+    public int UserId { get; set; }
+
+    public User GetUser() {
+        return Data.Users.Find(user => user.Id == UserId);
+    }
 }
 
 public class User
 {
     public int Id { get; set; }
-    public string Name { get; set; }    
+    public string Name { get; set; }
+
+    public List<Task> GetTasks()
+    {
+        return Data.Tasks.Where(task => task.UserId == Id).ToList();
+    }
 }
