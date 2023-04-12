@@ -12,7 +12,19 @@ query GetAllTasks{
     id
     title
     complete
+    user {
+      name
+    }
   }  
+}
+query AllUsers {
+  users {
+    id
+    name
+    tasks {
+      title
+    }
+  }
 }
 query getData {
   task(id: "rvjmygy9h") {
