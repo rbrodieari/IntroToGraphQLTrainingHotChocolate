@@ -2,6 +2,8 @@
 
 C# version of GraphQL service created during a training.
 
+Use Visual Studio 2022 and .Net 6.
+
 Example queries:
 ```graphql
 query GetAllTasks{
